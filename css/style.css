@@ -1,0 +1,32 @@
+:root {
+	--TempestusGreen: rgb(17, 192, 17);
+	/* --TempestusGreen: green; */
+}
+#title{
+    width:100%;
+    position: relative;
+
+}
+
+.center_text{
+    text-align: center;
+}
+#selector {
+    display:flex;
+    position: relative;
+    margin: 20px;
+
+}
+
+#guard_class_img{
+    width:33%;
+}
+
+#image{
+    width:90%;
+}
+
+html, body, div, li, ul, a{
+    background-color: black;
+    color: var(--TempestusGreen);
+}
