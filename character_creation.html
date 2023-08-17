@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/character_creation.css">
+    <script src="js/character_creation.js"></script>
+</head>
+
+<body>
+    <div class="body-wrapper">
+        <div class="side-panel" id="side-panel-left">
+        </div>
+        <div class="grid-section-wrapper">
+            <div class="grid-section">
+                <div class="navbar">
+                    <h1 class="center_text">PROJEKT: Tempestus</h1>
+                    <h4 class="center_text">Kreator gwardzisty</h4>
+                </div>
+
+                <div class="handbook-area">
+                    <p id="guard_class_text">Stormtrooper</p>
+
+                    <img id="guard_class_img"
+                        src="https://raw.githubusercontent.com/Project-Tempestus/assets/main/classes/stormtrooper.png"
+                        style="height:400px;" />
+                    <button style="height:70px; width:50%" id="clickme" onclick="changeClassReverse();">Poprzednia
+                        klasa</button>
+                    <button style="height:70px; width:50%" id="clickme" onclick="changeClass();">Kolejna klasa</button>
+
+                </div>
+                <div class="github-area">
+
+                    <p id="guard_regiment_text">Cadia</p>
+                    <img id="guard_regiment_img"
+                        src="https://raw.githubusercontent.com/Project-Tempestus/assets/main/regiments/cadia.png"
+                        style="height:400px;" />
+                    <button style="height:70px; width:50%" id="clickme" onclick="changeRegimentReverse();">Poprzedni
+                        regiment</button>
+                    <button style="height:70px; width:50%" id="clickme" onclick="changeRegiment();">Kolejny
+                        regiment</button>
+                    <!-- <p> Regiment description</p> -->
+
+                </div>
+                <div class="stats-area">
+                    <p> Statystyki gwardzisty</p>
+                    <table style="border:1px dashed green;">
+                        <tr>
+                            <th>Cecha</th>
+                            <th>Wartość</th>
+                        </tr>
+                        <tr>
+                            <td>Strzelectwo</td>
+                            <td id="marksmanship-value">10</td>
+                        </tr>
+                        <tr>
+                            <td>Zwarcie</td>
+                            <td id="cqb-value">40</td>
+                        </tr>
+                        <tr>
+                            <td>Siła</td>
+                            <td id="strength-value">40</td>
+                        </tr>
+                        <tr>
+                            <td>Wytrzymałość</td>
+                            <td id="constitution-value">40</td>
+                        </tr>
+                        <tr>
+                            <td>Zwinność</td>
+                            <td id="agility-value">40</td>
+                        </tr>
+                        <tr>
+                            <td>Wiedza</td>
+                            <td id="knowledge-value">30</td>
+                        </tr>
+                        <tr>
+                            <td>Punkty Żywotności</td>
+                            <td id="hp-value">100</td>
+                        </tr>
+                    </table>
+                    <p> Bonusy klasowe</p>
+                    <table style="border:1px dashed green;">
+                        <tr>
+                            <th>Cecha</th>
+                            <th>Wartość</th>
+                        </tr>
+                        <tr>
+                            <td>Strzelectwo</td>
+                            <td id="marksmanship-class-value">0</td>
+                        </tr>
+                        <tr>
+                            <td>Zwarcie</td>
+                            <td id="cqb-class-value">0</td>
+                        </tr>
+                        <tr>
+                            <td>Siła</td>
+                            <td id="strength-class-value">0</td>
+                        </tr>
+                        <tr>
+                            <td>Wytrzymałość</td>
+                            <td id="constitution-class-value">0</td>
+                        </tr>
+                        <tr>
+                            <td>Zwinność</td>
+                            <td id="agility-class-value">0</td>
+                        </tr>
+                        <tr>
+                            <td>Wiedza</td>
+                            <td id="knowledge-class-value">0</td>
+                        </tr>
+                        <tr>
+                            <td>Punkty Żywotności</td>
+                            <td id="hp-class-value">0</td>
+                        </tr>
+                    </table>
+
+                    <p> Bonusy regimentowe</p>
+                    <table style="border:1px dashed green;">
+                        <tr>
+                            <th>Cecha</th>
+                            <th>Wartość</th>
+                        </tr>
+                        <tr>
+                            <td>Strzelectwo</td>
+                            <td id="marksmanship-regiment-value">0</td>
+                        </tr>
+                        <tr>
+                            <td>Zwarcie</td>
+                            <td id="cqb-regiment-value">0</td>
+                        </tr>
+                        <tr>
+                            <td>Siła</td>
+                            <td id="strength-regiment-value">0</td>
+                        </tr>
+                        <tr>
+                            <td>Wytrzymałość</td>
+                            <td id="constitution-regiment-value">0</td>
+                        </tr>
+                        <tr>
+                            <td>Zwinność</td>
+                            <td id="agility-regiment-value">0</td>
+                        </tr>
+                        <tr>
+                            <td>Wiedza</td>
+                            <td id="knowledge-regiment-value">0</td>
+                        </tr>
+                        <tr>
+                            <td>Punkty Żywotności</td>
+                            <td id="hp-regiment-value">0</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="footer">
+                    <!-- <p>Bazowe strzelectwo: 40 </p>
+                <p id="guard_selector">Wybrano: None. Strzelectwo wynosi: None.</p>
+
+                <p>Bazowe strzelectwo: 40 </p>
+                <p id="guard_selector">Wybrano: None. Strzelectwo wynosi: None.</p> -->
+                    <a href="index.html" class="nav_link">Strona Główna</a>
+                    <img src="https://raw.githubusercontent.com/Project-Tempestus/assets/main/wh40k/aquila.png"
+                        alt="aquila" style="height:100px">
+
+
+                </div>
+            </div>
+
+
+        </div>
+        <div class="side-panel" id="side-panel-right">
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>

@@ -2,7 +2,6 @@
     --TempestusGreen: rgb(17, 192, 17);
 }
 
-
 html,
 body,
 div,
@@ -12,34 +11,56 @@ a {
     background-color: black;
     color: var(--TempestusGreen);
     font-family: 'Courier New', Courier, monospace;
+    
 }
 
-
+button{
+    background-color: black;
+    border: 1px dashed var(--TempestusGreen);
+    color: var(--TempestusGreen);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+}
 
 .grid-section {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 33% 33% 34%;
     grid-auto-rows: minmax(100px, auto);
-    grid-template-areas: "navbar navbar"
-        "handbook-area github-area"
-        "footer footer";
+    grid-template-areas: "navbar navbar navbar"
+        "handbook-area github-area stats-area"
+        "footer footer footer";
     grid-gap: 0px;
 }
 
 .navbar {
     grid-area: navbar;
+    height: fit-content;
 }
 
 .handbook-area {
     grid-area: handbook-area;
+    height: fit-content;
 }
 
 .github-area {
     grid-area: github-area;
+    height: fit-content;
+}
+
+.stats-area {
+    grid-area: stats-area;
+    height: fit-content;
 }
 
 .footer {
     grid-area: footer;
+    height: fit-content;
 }
 
 .navbar{
@@ -48,11 +69,17 @@ a {
     flex-direction: column;
     justify-content: space-around;
 }
+.stats-area{
+
+}
+.stats-area,
 .handbook-area,
 .github-area{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    
     /* border:1px dashed green; */
     /* flex-direction: row; */
     /* flex-wrap: nowrap; */
@@ -62,29 +89,35 @@ a {
 
 .footer {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
 }
 
+.nav_link{
+    padding: 10px;
+    margin:10px;
+    /* border: 1px dashed var(--TempestusGreen); */
+}
 .grid-section{
-    height: 100%;
+    height: fit-content;
 }
 
 .grid-section-wrapper{
     width: 70%;
-    height: 100%;
+    height: fit-content;
 }
 
 .body-wrapper{
     width:100%;
-    height: 100%;
+    height: fit-content;
     display:flex;
     justify-content: center;
 }
 
 .side-panel{
     width:15%;
-    height: 100%;
+    height: auto;
     padding:10px;
 }
 
@@ -96,7 +129,7 @@ a {
     background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(17,192,81,1) 83%, rgba(69,255,0,1) 100%);
 }
 html, body{
-    height:100%;
+    height:auto;
 }
 
 p {
