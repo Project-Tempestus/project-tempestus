@@ -9,13 +9,13 @@ const GUARD_CLASS_IMG = [
     "stormtrooper.png",
 ]
 const GUARD_CLASS = [
-    "Chirurgeon",
-    "Engineer",
+    "Chirurgon",
+    "Inżynier",
     "Grenadier",
-    "Sargeant",
-    "Scout",
-    "Sharpshooter",
-    "Stormtrooper",
+    "Sierżant",
+    "Zwiadowca",
+    "Szturmowiec",
+    "Strzelec",
 ]
 
 const GUARD_REGIMENT_DIR = "https://raw.githubusercontent.com/Project-Tempestus/assets/main/regiments/"
@@ -187,24 +187,24 @@ function generateStatistics() {
     let agility_class_bonus = 0
     let knowledge_class_bonus = 0
     let hp_class_bonus = 0
-    if (guard_class == "Chirurgeon") {
+    if (guard_class == "Chirurgon") {
         constitution_class_bonus = 15
         knowledge_class_bonus = 15
-    } else if (guard_class == "Engineer") {
+    } else if (guard_class == "Inżynier") {
         strength_class_bonus = 10
         knowledge_class_bonus = 20
     } else if (guard_class == "Grenadier") {
         strength_class_bonus = 15
         constitution_class_bonus = 15
-    } else if (guard_class == "Sargeant") {
+    } else if (guard_class == "Sierżant") {
         constitution_class_bonus = 10
         hp_class_bonus = 10
-    } else if (guard_class == "Scout") {
+    } else if (guard_class == "Zwiadowca") {
         agility_class_bonus = 30
         knowledge_class_bonus = 10
-    } else if (guard_class == "Sharpshooter") {
+    } else if (guard_class == "Strzelec") {
         marksmanship_class_bonus = 10
-    } else if (guard_class == "Stormtrooper") {
+    } else if (guard_class == "Szturmowiec") {
         cqb_class_bonus = 15
         agility_class_bonus = 15
     } else {
