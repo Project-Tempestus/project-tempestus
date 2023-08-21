@@ -3,6 +3,13 @@
 }
 
 html,
+body {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+html,
 body,
 div,
 li,
@@ -11,127 +18,122 @@ a {
     background-color: black;
     color: var(--TempestusGreen);
     font-family: 'Courier New', Courier, monospace;
-    
 }
 
-button{
+ul,
+li,
+p {
+    font-size: 20px;
+}
+
+button {
     background-color: black;
     border: 1px dashed var(--TempestusGreen);
     color: var(--TempestusGreen);
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    margin: 4px 2px;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    font-family: 'Courier New', Courier, monospace;
+}
+
+/* 
+ * Grid 
+ */
+
+.body-wrapper {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    width: 100%;
+}
+
+.grid-section-wrapper {
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 70%;
 }
 
 .grid-section {
     display: grid;
-    grid-template-columns: 33% 33% 34%;
-    grid-auto-rows: minmax(100px, auto);
-    grid-template-areas: "navbar navbar navbar"
-        "handbook-area github-area stats-area"
-        "footer footer footer";
+    grid-auto-rows: minmax(auto, auto);
     grid-gap: 0px;
+    grid-template-areas: "navbar navbar navbar"
+        "guard-class-area guard-regiment-area stats-area"
+        "footer footer footer";
+    grid-template-columns: 33% 33% 34%;
 }
 
 .navbar {
     grid-area: navbar;
-    height: fit-content;
 }
 
-.handbook-area {
-    grid-area: handbook-area;
-    height: fit-content;
+.guard-class-area {
+    grid-area: guard-class-area;
 }
 
-.github-area {
-    grid-area: github-area;
-    height: fit-content;
+.guard-regiment-area {
+    grid-area: guard-regiment-area;
 }
 
 .stats-area {
     grid-area: stats-area;
-    height: fit-content;
 }
 
 .footer {
     grid-area: footer;
-    height: fit-content;
 }
 
-.navbar{
-    display: flex;
+/* 
+ * Main content
+ */
+
+.navbar,
+.footer {
     align-items: center;
+    display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
-.stats-area{
 
-}
+
 .stats-area,
-.handbook-area,
-.github-area{
+.guard-class-area,
+.guard-regiment-area {
+    align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    
-    /* border:1px dashed green; */
-    /* flex-direction: row; */
-    /* flex-wrap: nowrap; */
-    /* align-content: center; */
-    /* align-items: center; */
 }
 
-.footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.nav_link{
+.nav_link {
+    margin: 10px;
     padding: 10px;
-    margin:10px;
-    /* border: 1px dashed var(--TempestusGreen); */
-}
-.grid-section{
-    height: fit-content;
 }
 
-.grid-section-wrapper{
-    width: 70%;
-    height: fit-content;
+#guard_class_img,
+#guard_regiment_img {
+    height: 400px;
 }
 
-.body-wrapper{
-    width:100%;
-    height: fit-content;
-    display:flex;
-    justify-content: center;
+#aquila_img {
+    height: 100px;
 }
 
-.side-panel{
-    width:15%;
-    height: auto;
-    padding:10px;
+/* 
+ * Side Panels 
+ */
+.side-panel {
+    width: 15%;
 }
 
-#side-panel-left{
-    background: linear-gradient(270deg, rgba(0,0,0,1) 0%, rgba(17,192,81,1) 83%, rgba(69,255,0,1) 100%);
+#side-panel-left {
+    background: linear-gradient(270deg, rgba(0, 0, 0, 1) 0%, rgba(17, 192, 81, 1) 83%, rgba(69, 255, 0, 1) 100%);
 }
 
-#side-panel-right{
-    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(17,192,81,1) 83%, rgba(69,255,0,1) 100%);
-}
-html, body{
-    height:auto;
-}
-
-p {
-    font-size: 16px;
+#side-panel-right {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(17, 192, 81, 1) 83%, rgba(69, 255, 0, 1) 100%);
 }
