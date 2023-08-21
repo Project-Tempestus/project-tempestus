@@ -21,23 +21,23 @@
                     <p id="guard_class_text">Chirurgon</p>
 
                     <img id="guard_class_img"
-                        src="https://raw.githubusercontent.com/Project-Tempestus/assets/main/classes/chirurgeon.png"/>
-                    <button style="height:70px; width:50%" id="clickme" onclick="changeClassReverse();">Poprzednia
-                        klasa</button>
-                    <button style="height:70px; width:50%" id="clickme" onclick="changeClass();">Kolejna klasa</button>
+                        src="https://raw.githubusercontent.com/Project-Tempestus/assets/main/classes/chirurgeon.png" />
+                        <div id="guard_regiment_button" style="display:flex;flex-direction: row;">
+                            <p><i class="arrow left" onclick="changeClassReverse()"></i></p>
+                            <p id="text-class">Klasa</p>
+                            <p><i class="arrow right" onclick="changeClass()"></i></p>
+                        </div>
 
                 </div>
                 <div class="guard-regiment-area">
-
                     <p id="guard_regiment_text">Cadia</p>
                     <img id="guard_regiment_img"
-                        src="https://raw.githubusercontent.com/Project-Tempestus/assets/main/regiments/cadia.png"/>
-                    <button style="height:70px; width:50%" id="clickme" onclick="changeRegimentReverse();">Poprzedni
-                        regiment</button>
-                    <button style="height:70px; width:50%" id="clickme" onclick="changeRegiment();">Kolejny
-                        regiment</button>
-                    <!-- <p> Regiment description</p> -->
-
+                        src="https://raw.githubusercontent.com/Project-Tempestus/assets/main/regiments/cadia.png" />
+                    <div id="guard_regiment_button" style="display:flex;flex-direction: row;">
+                        <p><i class="arrow left" onclick="changeRegimentReverse()"></i></p>
+                        <p id="text-regiment">Regiment</p>
+                        <p><i class="arrow right" onclick="changeRegiment()"></i></p>
+                    </div>
                 </div>
                 <div class="stats-area">
                     <p> Statystyki gwardzisty</p>
@@ -154,7 +154,8 @@
                 <p>Bazowe strzelectwo: 40 </p>
                 <p id="guard_selector">Wybrano: None. Strzelectwo wynosi: None.</p> -->
                     <a href="index.html" class="nav_link">Strona Główna</a>
-                    <img id="aquila_img" src="https://raw.githubusercontent.com/Project-Tempestus/assets/main/wh40k/aquila.png"
+                    <img id="aquila_img"
+                        src="https://raw.githubusercontent.com/Project-Tempestus/assets/main/wh40k/aquila.png"
                         alt="aquila">
                 </div>
             </div>
@@ -166,17 +167,28 @@
     </div>
     </div>
     <!-- Improve reponsiveness -->
-    <link rel="preload" as="image" href="https://raw.githubusercontent.com/Project-Tempestus/assets/main/classes/chirurgeon.png">
-    <link rel="preload" as="image" href="https://raw.githubusercontent.com/Project-Tempestus/assets/main/classes/engineer.png">
-    <link rel="preload" as="image" href="https://raw.githubusercontent.com/Project-Tempestus/assets/main/classes/grenadier.png">
-    <link rel="preload" as="image" href="https://raw.githubusercontent.com/Project-Tempestus/assets/main/classes/sargeant.png">
-    <link rel="preload" as="image" href="https://raw.githubusercontent.com/Project-Tempestus/assets/main/classes/scout.png">
-    <link rel="preload" as="image" href="https://raw.githubusercontent.com/Project-Tempestus/assets/main/classes/sharpshooter.png">
-    <link rel="preload" as="image" href="https://raw.githubusercontent.com/Project-Tempestus/assets/main/classes/stormtrooper.png">
-    <link rel="preload" as="image" href="https://raw.githubusercontent.com/Project-Tempestus/assets/main/regiments/armageddon.png">
-    <link rel="preload" as="image" href="https://raw.githubusercontent.com/Project-Tempestus/assets/main/regiments/cadia.png">
-    <link rel="preload" as="image" href="https://raw.githubusercontent.com/Project-Tempestus/assets/main/regiments/krieg.png">
-    <link rel="preload" as="image" href="https://raw.githubusercontent.com/Project-Tempestus/assets/main/regiments/vostroya.png">
+    <link rel="preload" as="image"
+        href="https://raw.githubusercontent.com/Project-Tempestus/assets/main/classes/chirurgeon.png">
+    <link rel="preload" as="image"
+        href="https://raw.githubusercontent.com/Project-Tempestus/assets/main/classes/engineer.png">
+    <link rel="preload" as="image"
+        href="https://raw.githubusercontent.com/Project-Tempestus/assets/main/classes/grenadier.png">
+    <link rel="preload" as="image"
+        href="https://raw.githubusercontent.com/Project-Tempestus/assets/main/classes/sargeant.png">
+    <link rel="preload" as="image"
+        href="https://raw.githubusercontent.com/Project-Tempestus/assets/main/classes/scout.png">
+    <link rel="preload" as="image"
+        href="https://raw.githubusercontent.com/Project-Tempestus/assets/main/classes/sharpshooter.png">
+    <link rel="preload" as="image"
+        href="https://raw.githubusercontent.com/Project-Tempestus/assets/main/classes/stormtrooper.png">
+    <link rel="preload" as="image"
+        href="https://raw.githubusercontent.com/Project-Tempestus/assets/main/regiments/armageddon.png">
+    <link rel="preload" as="image"
+        href="https://raw.githubusercontent.com/Project-Tempestus/assets/main/regiments/cadia.png">
+    <link rel="preload" as="image"
+        href="https://raw.githubusercontent.com/Project-Tempestus/assets/main/regiments/krieg.png">
+    <link rel="preload" as="image"
+        href="https://raw.githubusercontent.com/Project-Tempestus/assets/main/regiments/vostroya.png">
 </body>
 
 </html>
