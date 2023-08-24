@@ -11,3 +11,4 @@ PROJECT: Tempestus is the following content:
 - [Website source code](https://github.com/Project-Tempestus/website)
 - [Roll20 Character Sheet](https://github.com/Project-Tempestus/tempestus_character_sheet)
 - [Assets](https://github.com/Project-Tempestus/assets)
+- [Statistics](https://github.com/Project-Tempestus/statistics)
