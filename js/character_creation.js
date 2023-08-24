@@ -14,8 +14,8 @@ const GUARD_CLASS = [
     "Grenadier",
     "Sierżant",
     "Zwiadowca",
-    "Szturmowiec",
     "Strzelec",
+    "Szturmowiec",
 ]
 
 const GUARD_REGIMENT_DIR = "https://raw.githubusercontent.com/Project-Tempestus/assets/main/regiments/"
