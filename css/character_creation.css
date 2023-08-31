@@ -142,11 +142,16 @@ button {
 
 .arrow {
     border: solid var(--TempestusGreen);
-    border-width: 0 5px 5px 0;
+    border-width: 0 7px 7px 0;
     display: inline-block;
-    padding: 5px;
+    padding: 7px;
     margin-left:10px;
     margin-right:10px;
+}
+
+.arrow:hover {
+    scale:1.1;
+    cursor: crosshair;
 }
 
 #text-class, #text-regiment{
