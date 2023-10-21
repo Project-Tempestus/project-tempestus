@@ -133,7 +133,7 @@ function changeRegimentReverse() {
 
     return false;
 }
-const BASE_MARKSMANSHIP = 10
+const BASE_MARKSMANSHIP = 15
 const BASE_CQB = 40
 const BASE_STRENGTH = 40
 const BASE_constitution = 40
@@ -168,8 +168,9 @@ function generateStatistics() {
         agility_regiment_bonus = 10
         knowledge_regiment_bonus = 30
     } else if (guard_regiment == "Vostroya") {
-        constitution_regiment_bonus = 15
-        hp_regiment_bonus = 20
+        constitution_regiment_bonus = 10;
+        strength_regiment_bonus = 10;
+        hp_regiment_bonus = 30;
     } else {
         marksmanship_regiment_bonus = 0
         cqb_regiment_bonus = 0
@@ -203,7 +204,7 @@ function generateStatistics() {
         agility_class_bonus = 30
         knowledge_class_bonus = 10
     } else if (guard_class == "Strzelec") {
-        marksmanship_class_bonus = 10
+        marksmanship_class_bonus = 5
     } else if (guard_class == "Szturmowiec") {
         cqb_class_bonus = 15
         agility_class_bonus = 15
