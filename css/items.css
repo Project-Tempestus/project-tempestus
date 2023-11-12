@@ -1,0 +1,20 @@
+
+table, th, td {
+  border: 1px solid black;
+}
+
+.all_tables{
+    display:flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex: 0 0 50%;
+}
+
+table {
+    width:25%;
+}
+
+h3 {
+  text-align: center;
+}

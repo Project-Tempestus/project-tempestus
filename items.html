@@ -1,59 +1,58 @@
 <!DOCTYPE html>
 <html>
 
-<style>
-table, th, td {
-  border: 1px solid black;
-}
-</style>
 
 <head>
-    <script src="js/items.js"></script>
+  <link rel="stylesheet" href="css/items.css">
+  <script src="js/items.js"></script>
 </head>
-
-<div style="display:flex;margin: 20px;">
-  <div style="margin: 10px;">
-    <p> Wybierz regimenty (WIP) </p>
-    <input type="checkbox" id="regiment_0" value="">
-    <label for="regiment_0"> Armageddon </label><br>
-    <input type="checkbox" id="regiment_1" value="">
-    <label for="regiment_1"> Cadia </label><br>
-    <input type="checkbox" id="regiment_2" value="">
-    <label for="regiment_2"> Krieg </label><br>
-    <input type="checkbox" id="regiment_3" value="">
-    <label for="regiment_3"> Vostroya </label><br>
-  </div> 
-
-  <div style="margin: 10px;">
-    <p> Wybierz klasy (WIP)</p>
-    <input type="checkbox" id="class_0" value="">
-    <label for="class_0"> Chirurgon </label><br>
-    <input type="checkbox" id="class_0" value="">
-    <label for="class_0"> Inżynier </label><br>
-    <input type="checkbox" id="class_0" value="">
-    <label for="class_0"> Grenadier </label><br>
-    <input type="checkbox" id="class_0" value="">
-    <label for="class_0"> Sierżant </label><br>
-    <input type="checkbox" id="class_0" value="">
-    <label for="class_0"> Zwiadowca </label><br>
-    <input type="checkbox" id="class_0" value="">
-    <label for="class_0"> Strzelec </label><br>
-    <input type="checkbox" id="class_0" value="">
-    <label for="class_0"> Szturmowiec </label><br>
-  </div>
-
-  <div style="margin: 10px;">
-    <p>Dodatkowe opcje (Działa) </p>
-    <input type="checkbox" id="config_0" value="" onclick="hide_items_for_all()">
-    <label for="config_0"> Pokazuj przedmioty dostępne dla wszystkich </label><br>
-    <input type="checkbox" id="config_1" value="" onclick="hide_body()">
-    <label for="config_1"> Pokazuj "Ciało" (Twarz, Tatuże, etc.) </label><br>
-    <button> Resetuj filtry (WIP) </button>
-  </div>
-</div>
-
 <body>
-    
+
+  <div style="display:flex;margin: 20px;">
+    <div style="margin: 10px;">
+      <p> Wybierz regimenty (WIP) </p>
+      <input type="checkbox" id="regiment_0" value="">
+      <label for="regiment_0"> Armageddon </label><br>
+      <input type="checkbox" id="regiment_1" value="">
+      <label for="regiment_1"> Cadia </label><br>
+      <input type="checkbox" id="regiment_2" value="">
+      <label for="regiment_2"> Krieg </label><br>
+      <input type="checkbox" id="regiment_3" value="">
+      <label for="regiment_3"> Vostroya </label><br>
+    </div> 
+
+    <div style="margin: 10px;">
+      <p> Wybierz klasy (WIP)</p>
+      <input type="checkbox" id="class_0" value="">
+      <label for="class_0"> Chirurgon </label><br>
+      <input type="checkbox" id="class_0" value="">
+      <label for="class_0"> Inżynier </label><br>
+      <input type="checkbox" id="class_0" value="">
+      <label for="class_0"> Grenadier </label><br>
+      <input type="checkbox" id="class_0" value="">
+      <label for="class_0"> Sierżant </label><br>
+      <input type="checkbox" id="class_0" value="">
+      <label for="class_0"> Zwiadowca </label><br>
+      <input type="checkbox" id="class_0" value="">
+      <label for="class_0"> Strzelec </label><br>
+      <input type="checkbox" id="class_0" value="">
+      <label for="class_0"> Szturmowiec </label><br>
+    </div>
+
+    <div style="margin: 10px;">
+      <p>Dodatkowe opcje (Działa) </p>
+      <input type="checkbox" id="config_0" value="" onclick="hide_items_for_all()">
+      <label for="config_0"> Pokazuj przedmioty dostępne dla wszystkich </label><br>
+      <input type="checkbox" id="config_1" value="" onclick="hide_body()">
+      <label for="config_1"> Pokazuj "Ciało" (Twarz, Tatuże, etc.) </label><br>
+      <button> Resetuj filtry (WIP) </button>
+    </div>
+  </div>
+
+<hr>
+<h3> Ciało </h3>
+<hr>
+<div class="all_tables">
 
 <table id="face">
   <caption> Twarz </caption>
@@ -581,9 +580,13 @@ table, th, td {
   </tr>
   
 </table> 
-    
+</div>
+<hr>
+<h3> Umundurowanie </h3>
+<hr>
+<div class="all_tables">
 
-<table id="boots">
+  <table id="boots">
   <caption> Obuwie </caption>
   <tr>
     <th>L.p.</th>
@@ -719,7 +722,8 @@ table, th, td {
   </tr>
   
 </table> 
-    
+  
+
 
 <table id="shirt">
   <caption> Koszula </caption>
@@ -1091,8 +1095,12 @@ table, th, td {
   </tr>
   
 </table> 
-    
 
+</div>
+<hr>
+<h3> Rynsztunek </h3>
+<hr>
+<div class="all_tables">
 <table id="backpack">
   <caption> Plecak </caption>
   <tr>
@@ -1655,6 +1663,7 @@ table, th, td {
   </tr>
   
 </table> 
+</div>
 
 </body>
 
