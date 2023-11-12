@@ -11,11 +11,9 @@ table, th, td {
     <script src="js/items.js"></script>
 </head>
 
-<body>
-
 <div style="display:flex;margin: 20px;">
   <div style="margin: 10px;">
-    <p> Wybierz regimenty </p>
+    <p> Wybierz regimenty (WIP) </p>
     <input type="checkbox" id="regiment_0" value="">
     <label for="regiment_0"> Armageddon </label><br>
     <input type="checkbox" id="regiment_1" value="">
@@ -27,7 +25,7 @@ table, th, td {
   </div> 
 
   <div style="margin: 10px;">
-    <p> Wybierz klasy </p>
+    <p> Wybierz klasy (WIP)</p>
     <input type="checkbox" id="class_0" value="">
     <label for="class_0"> Chirurgon </label><br>
     <input type="checkbox" id="class_0" value="">
@@ -45,12 +43,19 @@ table, th, td {
   </div>
 
   <div style="margin: 10px;">
-    <p>Dodatkowe opcje</p>
-    <input type="checkbox" id="config_0" value="">
-    <label for="class_0"> Pokazuj przedmioty dostępne dla wszystkich </label><br>
+    <p>Dodatkowe opcje (Działa) </p>
+    <input type="checkbox" id="config_0" value="" onclick="hide_items_for_all()">
+    <label for="config_0"> Pokazuj przedmioty dostępne dla wszystkich </label><br>
+    <input type="checkbox" id="config_1" value="" onclick="hide_body()">
+    <label for="config_1"> Pokazuj "Ciało" (Twarz, Tatuże, etc.) </label><br>
+    <button> Resetuj filtry (WIP) </button>
   </div>
 </div>
-<table>
+
+<body>
+    
+
+<table id="face">
   <caption> Twarz </caption>
   <tr>
     <th>L.p.</th>
@@ -260,7 +265,7 @@ table, th, td {
 </table> 
     
 
-<table>
+<table id="tatoo">
   <caption> Tatuaże </caption>
   <tr>
     <th>L.p.</th>
@@ -338,7 +343,7 @@ table, th, td {
 </table> 
     
 
-<table>
+<table id="augmentics">
   <caption> Augmentacje </caption>
   <tr>
     <th>L.p.</th>
@@ -362,7 +367,7 @@ table, th, td {
 </table> 
     
 
-<table>
+<table id="facial_hair">
   <caption> Zarost </caption>
   <tr>
     <th>L.p.</th>
@@ -422,7 +427,7 @@ table, th, td {
 </table> 
     
 
-<table>
+<table id="hairstyle">
   <caption> Włosy </caption>
   <tr>
     <th>L.p.</th>
@@ -578,7 +583,7 @@ table, th, td {
 </table> 
     
 
-<table>
+<table id="boots">
   <caption> Obuwie </caption>
   <tr>
     <th>L.p.</th>
@@ -638,7 +643,7 @@ table, th, td {
 </table> 
     
 
-<table>
+<table id="pants">
   <caption> Spodnie </caption>
   <tr>
     <th>L.p.</th>
@@ -680,7 +685,7 @@ table, th, td {
 </table> 
     
 
-<table>
+<table id="leg_armor">
   <caption> Pancerz na nogi </caption>
   <tr>
     <th>L.p.</th>
@@ -716,7 +721,7 @@ table, th, td {
 </table> 
     
 
-<table>
+<table id="shirt">
   <caption> Koszula </caption>
   <tr>
     <th>L.p.</th>
@@ -782,7 +787,7 @@ table, th, td {
 </table> 
     
 
-<table>
+<table id="gloves">
   <caption> Rękawice </caption>
   <tr>
     <th>L.p.</th>
@@ -848,7 +853,7 @@ table, th, td {
 </table> 
     
 
-<table>
+<table id="chest">
   <caption> Klatka piersiowa </caption>
   <tr>
     <th>L.p.</th>
@@ -920,7 +925,7 @@ table, th, td {
 </table> 
     
 
-<table>
+<table id="shoulders">
   <caption> Naramienniki </caption>
   <tr>
     <th>L.p.</th>
@@ -980,7 +985,7 @@ table, th, td {
 </table> 
     
 
-<table>
+<table id="helmet">
   <caption> Nakrycie głowy </caption>
   <tr>
     <th>L.p.</th>
@@ -1088,7 +1093,7 @@ table, th, td {
 </table> 
     
 
-<table>
+<table id="backpack">
   <caption> Plecak </caption>
   <tr>
     <th>L.p.</th>
@@ -1118,7 +1123,7 @@ table, th, td {
 </table> 
     
 
-<table>
+<table id="cloak">
   <caption> Płaszcz </caption>
   <tr>
     <th>L.p.</th>
@@ -1142,7 +1147,7 @@ table, th, td {
 </table> 
     
 
-<table>
+<table id="sheathed_weapon">
   <caption> Broń przy pasie </caption>
   <tr>
     <th>L.p.</th>
@@ -1172,7 +1177,7 @@ table, th, td {
 </table> 
     
 
-<table>
+<table id="shoulderbag">
   <caption> Podwieszka </caption>
   <tr>
     <th>L.p.</th>
@@ -1232,7 +1237,7 @@ table, th, td {
 </table> 
     
 
-<table>
+<table id="waist">
   <caption> Pas </caption>
   <tr>
     <th>L.p.</th>
@@ -1292,7 +1297,7 @@ table, th, td {
 </table> 
     
 
-<table>
+<table id="necklace">
   <caption> Szyja </caption>
   <tr>
     <th>L.p.</th>
@@ -1346,7 +1351,7 @@ table, th, td {
 </table> 
     
 
-<table>
+<table id="headgear">
   <caption> Headgear </caption>
   <tr>
     <th>L.p.</th>
@@ -1412,7 +1417,7 @@ table, th, td {
 </table> 
     
 
-<table>
+<table id="additional_headgear">
   <caption> Dodatkowy headgear </caption>
   <tr>
     <th>L.p.</th>
@@ -1466,7 +1471,7 @@ table, th, td {
 </table> 
     
 
-<table>
+<table id="mask">
   <caption> Maska </caption>
   <tr>
     <th>L.p.</th>
@@ -1508,7 +1513,7 @@ table, th, td {
 </table> 
     
 
-<table>
+<table id="firearm">
   <caption> Broń długa </caption>
   <tr>
     <th>L.p.</th>
@@ -1628,7 +1633,7 @@ table, th, td {
 </table> 
     
 
-<table>
+<table id="pistol">
   <caption> Broń krótka </caption>
   <tr>
     <th>L.p.</th>
@@ -1650,6 +1655,7 @@ table, th, td {
   </tr>
   
 </table> 
+
 </body>
 
 </html>
