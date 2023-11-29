@@ -161,9 +161,9 @@ function generateStatistics() {
         constitution_regiment_bonus = 5
         agility_regiment_bonus = 5
     } else if (guard_regiment == "Krieg") {
-        cqb_regiment_bonus = 10
+        cqb_regiment_bonus = 5
         constitution_regiment_bonus = 10
-        knowledge_regiment_bonus = 10
+        knowledge_regiment_bonus = 5
     } else if (guard_regiment == "Armageddon") {
         agility_regiment_bonus = 10
         knowledge_regiment_bonus = 30
