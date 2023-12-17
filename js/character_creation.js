@@ -22,12 +22,14 @@ const GUARD_REGIMENT_DIR = "https://raw.githubusercontent.com/Project-Tempestus/
 const GUARD_REGIMENT = [
     "Armageddon",
     "Cadia",
+    "Catachan",
     "Krieg",
     "Vostroya"
 ];
 const GUARD_REGIMENT_IMG = [
     "armageddon.png",
     "cadia.png",
+    "catachan.png",
     "krieg.png",
     "vostroya.png"
 ];
@@ -160,6 +162,11 @@ function generateStatistics() {
         cqb_regiment_bonus = 5
         constitution_regiment_bonus = 5
         agility_regiment_bonus = 5
+    } else if (guard_regiment == "Catachan") {
+        cqb_regiment_bonus = 10;
+        strength_regiment_bonus = 5;
+        agility_regiment_bonus = 5;
+        hp_regiment_bonus = 15;
     } else if (guard_regiment == "Krieg") {
         cqb_regiment_bonus = 5
         constitution_regiment_bonus = 10
