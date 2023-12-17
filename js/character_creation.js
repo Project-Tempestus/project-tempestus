@@ -1,12 +1,12 @@
 const GUARD_CLASS_DIR = "https://raw.githubusercontent.com/Project-Tempestus/assets/main/classes/"
 const GUARD_CLASS_IMG = [
-    "chirurgeon.png",
-    "engineer.png",
-    "grenadier.png",
-    "sargeant.png",
-    "scout.png",
-    "sharpshooter.png",
-    "stormtrooper.png",
+    "chirurgeon.webp",
+    "engineer.webp",
+    "grenadier.webp",
+    "sargeant.webp",
+    "scout.webp",
+    "sharpshooter.webp",
+    "stormtrooper.webp",
 ]
 const GUARD_CLASS = [
     "Chirurgon",
