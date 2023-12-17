@@ -27,11 +27,11 @@ const GUARD_REGIMENT = [
     "Vostroya"
 ];
 const GUARD_REGIMENT_IMG = [
-    "armageddon.png",
-    "cadia.png",
-    "catachan.png",
-    "krieg.png",
-    "vostroya.png"
+    "armageddon.webp",
+    "cadia.webp",
+    "catachan.webp",
+    "krieg.webp",
+    "vostroya.webp"
 ];
 
 window.onload = function() {
